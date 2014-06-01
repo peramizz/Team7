@@ -3,11 +3,12 @@
     Created on : Jun 1, 2014, 12:02:20 AM
     Author     : Nestsuz Lekjaroen
 --%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-	<title>SMSoA | Storage Management</title>
+	<title>SMSA | Storage Management</title>
         <jsp:include page="WEB-INF/title.jsp"/>
         <style type="text/css">  
             tr{
@@ -30,32 +31,32 @@
                   <tr>
                     <td>01</td>
                     <td><img src="image/s4.jpg" style="width:100px;height:100px;"></a></td>
-                    <td>ถังสี : สีขาว</td>
+                    <td>Paint bucket : White</td>
                     <td>4</td>
                   </tr>
                   <tr>
                     <td>02</td>
                     <td><img src="image/s4.jpg" style="width:100px;height:100px;"></a></td>
-                    <td>ถังสี : สีเขียว</td>
+                    <td>Paint bucket : Red</td>
                     <td>2</td>
                   </tr>
                   <tr>
                     <td>03</td>
                     <td><img src="image/s4.jpg" style="width:100px;height:100px;"></a></td>
-                    <td>ถังสี : สีแดง</td>
+                    <td>Paint bucket : Blue</td>
                     <td>6</td>
                   </tr>
                   <tr>
                     <td>04</td>
                     <td><img src="image/s2.jpg" style="width:100px;height:100px;"></a></td>
-                    <td>แปรงทาสี</td>
+                    <td>Brush</td>
                     <td>20</td>
                   </tr>
                   <tr>
                     <td>05</td>
                     <td><img src="image/s1.jpg" style="width:100px;height:100px;"></a></td>
-                    <td>สว่าน</td>
-                    <td>1</td>
+                    <td>Drill</td>
+                    <td>3</td>
                   </tr>
                 </table>
             </div>
