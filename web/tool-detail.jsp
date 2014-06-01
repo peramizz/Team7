@@ -17,7 +17,7 @@
         <div class="container col-sm-12 animated fadeIn">
             <div class="row">
                 <jsp:include page="WEB-INF/sidebar.jsp"/>
-                <div class="col-sm-8 well">
+                <div class="col-sm-8 back radius10">
                     <div class="row">
                         <div class="col-sm-4"><img src="image/s2.jpg" width="80%" height="80%">
                             <input type="file" class="form-control" style="margin: 10px 0px 10px 0px;"><button type="submit">Upload</button>
