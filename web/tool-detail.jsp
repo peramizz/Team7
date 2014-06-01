@@ -87,9 +87,10 @@
                     </div>    
                     <div class="row">
                         <hr>
-                        <a href='additem?idtool=<%=t.getId()%>&search=<%=search%>'>
+                        
+                        <a href='additem?idtool=<%=t.getId()%>&search=<%=search%>' style="text-decoration: none;text-decoration-color: black;color:black">
                                 <span class='glyphicon glyphicon-plus' style="color: green;" ></span>
-                            </a> Add New ITEM
+                                <b>Add New ITEM</b></a>
                         <table class="table">
                             <tr>
                                 <th>Id</th>   

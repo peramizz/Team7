@@ -13,7 +13,7 @@
     </head>
     <body>
         <jsp:include page="WEB-INF/header.jsp"/>
-        <div class="container  col-sm-12 animated fadeIn">
+        <div style="height:575px;" class="container  col-sm-12 animated fadeIn">
             <div class="row">
                 <jsp:include page="WEB-INF/sidebar.jsp"/>
                 <div class="col-sm-3 well">                                        
