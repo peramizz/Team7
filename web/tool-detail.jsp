@@ -3,7 +3,6 @@
     Created on : Jun 1, 2014, 12:32:41 AM
     Author     : Nestsuz Lekjaroen
 --%>
-
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
 <%@page import="model.Tool"%>
@@ -20,19 +19,23 @@
     </head>
     <body>
         <jsp:include page="WEB-INF/header.jsp"/>
-        <div class="container col-sm-12 animated fadeIn">
+        <div  class="container col-sm-12 animated fadeIn">
             <div class="row">
                 <jsp:include page="WEB-INF/sidebar.jsp"/>
                 <div class="col-sm-8 back radius10">
                     <div class="row">
                         <form action="changetool"  method="post" enctype="multipart/form-data">
-                        <div class="col-sm-4"><img src="<%=t.getPicture()%>" width="80%" height="80%">
-                            <input type="file" class="form-control" style="margin: 10px 0px 10px 0px;" name="upload">
-                            <input type="hidden" name="id" value="<%=t.getId()%>">
-                        </div>
-                        <div class="col-sm-3"><h1><%=t.getName()%></h1></div>
+                           <div class="col-sm-4"><img src="<%=t.getPicture()%>" width="80%" height="80%">
+                                <input type="file" class="form-control" style="margin: 10px 0px 10px 0px;" name="upload">
+                                <input type="hidden" name="id" value="<%=t.getId()%>">
+                            </div>
+                            <div class="col-sm-3">
+                                <div><h4>Tools name : </h4></div>
+                                <h1><%=t.getName()%></h1>
+                            </div>
                         <div class="col-sm-4">
                              <div class="checkbox">
+                                 <div><h4>-- Tool's Tag --</h4></div>
                                 <label>
                                   <input type="checkbox" <%=t.getTags().contains("Speaker")?"checked":""%> name="tag" value="Speaker"> Speaker
                                 </label>
@@ -68,12 +71,12 @@
                                 </label>
                               </div>
                         </div> 
-                        <div class="col-sm-1">
-                            <button type="submit">
-                            <span class="glyphicon glyphicon-save" style="font-size: 20px"></span>
+                        <div class="col-sm-2">
+                            <button type="submit" class="btn-link">
+                                <span class="glyphicon glyphicon-save" style="font-size: 20px;margin: 20px 0px 0px 0px""></span>
                             </button>
                             <a href="deletetool?id=<%=t.getId()%>&search=<%=request.getParameter("search")%>">
-                            <span class="glyphicon glyphicon-trash"></span>
+                                <span class="glyphicon glyphicon-trash" style="font-size: 20px;margin: 20px 0px 0px 20px"></span>
                             </a>
                         </div>
                         </form>
@@ -89,17 +92,17 @@
                             </tr>
                             <tr>
                                 <td>1</td>   
-                                <td><textarea></textarea></td>
+                                <td><textarea cols="50"></textarea></td>
                                 <td><span class="glyphicon glyphicon-ok" style="font-size: 20px;color:greenyellow;"></span></td>
                                 <td><span class="glyphicon glyphicon-save" style="font-size: 20px"></span>
-                            <span class="glyphicon glyphicon-trash"></span></td>
+                            <span class="glyphicon glyphicon-trash" style="font-size: 20px;margin-left: 10px"></span></td>
                             </tr>
                             <tr>
                                 <td>2</td>   
-                                <td><textarea></textarea></td>
+                                <td><textarea cols="50"></textarea></td>
                                 <td><span class="glyphicon glyphicon-user" style="font-size: 20px;color:gray"></span></td>
                                 <td><span class="glyphicon glyphicon-save" style="font-size: 20px"></span>
-                            <span class="glyphicon glyphicon-trash"></span></td>
+                            <span class="glyphicon glyphicon-trash"style="font-size: 20px;margin-left: 10px"></span></td>
                             </tr>
                         </table>
                     </div>

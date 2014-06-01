@@ -26,7 +26,7 @@ public class ConnectionBuilder {
         Connection con = null;
         try {
             Class.forName("org.apache.derby.jdbc.ClientDriver");
-            con = DriverManager.getConnection("jdbc:derby://localhost:1527/InProjectDB", "app", "app");
+            con = DriverManager.getConnection("jdbc:derby://localhost:1527/team7", "team7", "team7");
 
         } catch (SQLException ex) {
             Logger.getLogger(ConnectionBuilder.class.getName()).log(Level.SEVERE, null, ex);

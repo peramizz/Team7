@@ -16,6 +16,10 @@
         <servlet-name>deletetool</servlet-name>
         <servlet-class>servlet.deletetool</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>getcatalog</servlet-name>
+        <servlet-class>servlet.getcatalog</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>keywordsearch</servlet-name>
         <url-pattern>/keywordsearch</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>deletetool</servlet-name>
         <url-pattern>/deletetool</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getcatalog</servlet-name>
+        <url-pattern>/getcatalog</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

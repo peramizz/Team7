@@ -449,4 +449,26 @@ public class Tool {
             Logger.getLogger(Tool.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    public static List<Tool> findByTag(String tagname){
+        List tools = new ArrayList();
+        try{
+            Connection conn = ConnectionBuilder.getConnection();
+            String sql = "SELECT * FROM TOOLTAG WHERE NAME = ?  ";
+            PreparedStatement pstm = conn.prepareStatement(sql);
+            pstm.setString(1,tagname);
+            ResultSet rs = pstm.executeQuery();
+            Tool t = null;
+            while(rs.next()){
+                t = new Tool();
+                orm(rs , t);
+                tools.add(t);
+                t.fillItem();
+                t.fillTag();
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Tool.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return tools;
+    }
 }
