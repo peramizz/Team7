@@ -1,9 +1,3 @@
-<%-- 
-    Document   : return
-    Created on : Jun 1, 2014, 9:39:23 AM
-    Author     : Nestsuz Lekjaroen
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -18,7 +12,7 @@
                 <jsp:include page="WEB-INF/sidebar.jsp"/>
                 <div class="col-sm-3 well">                                        
                     <center><p>Student Id : <input type="text" required> </p></center>
-                    <button type="submit" class="pull-right" >Next</button>
+                    <button type="submit" class="pull-right">Next</button>
                     
                 </div>
             </div>

@@ -9,7 +9,7 @@
 <html>
     <head>
         <jsp:include page="WEB-INF/title.jsp"/> 
-        <title>SMSA | Return</title>
+        <title>SMSA | Borrow</title>
     </head>
  <body>
         <jsp:include page="WEB-INF/header.jsp"/>
@@ -30,44 +30,51 @@
                         <th style="text-align:center;">Id</th>
                         <th style="text-align:center;">Picture</th>
                         <th style="text-align:center;">Description</th>
+                        <th style="text-align:center;">Avaliable</th>
                         <th style="text-align:center;">Amount</th>
                       </tr>
                       <tr>
-                          <td><input type="checkbox"> <span style="font-size: 20px; font-weight: bold; color:blue;">Return</span></td>
+                          <td><input type="checkbox"> <span style="font-size: 20px; font-weight: bold; color:blue;">Borrow</span></td>
                         <td>01</td>
                         <td><img src="image/s4.jpg" style="width:100px;height:100px;"></a></td>
                         <td>Paint bucket : White</td>
                         <td>4</td>
+                        <td><input type="number"></td>
                       </tr>
                       <tr>
-                        <td><input type="checkbox"> <span style="font-size: 20px; font-weight: bold; color:blue;">Return</span></td>
+                        <td><input type="checkbox"> <span style="font-size: 20px; font-weight: bold; color:blue;">Borrow</span></td>
                         <td>02</td>
                         <td><img src="image/s4.jpg" style="width:100px;height:100px;"></a></td>
                         <td>Paint bucket : Red</td>
                         <td>2</td>
+                        <td><input type="number"></td>
                       </tr>
                       <tr>
-                        <td><input type="checkbox"> <span style="font-size: 20px; font-weight: bold; color:blue;">Return</span></td>
+                        <td><input type="checkbox"> <span style="font-size: 20px; font-weight: bold; color:blue;">Borrow</span></td>
                         <td>03</td>
                         <td><img src="image/s4.jpg" style="width:100px;height:100px;"></a></td>
                         <td>Paint bucket : Blue</td>
                         <td>6</td>
+                        <td><input type="number"></td>
                       </tr>
                       <tr>
-                        <td><input type="checkbox"> <span style="font-size: 20px; font-weight: bold; color:blue;">Return</span></td> 
+                        <td><input type="checkbox"> <span style="font-size: 20px; font-weight: bold; color:blue;">Borrow</span></td> 
                         <td>04</td>
                         <td><img src="image/s2.jpg" style="width:100px;height:100px;"></a></td>
                         <td>Brush</td>
                         <td>20</td>
+                        <td><input type="number"></td>
                       </tr>
                       <tr>
-                        <td><input type="checkbox"> <span style="font-size: 20px; font-weight: bold; color:blue;">Return</span></td>
+                        <td><input type="checkbox"> <span style="font-size: 20px; font-weight: bold; color:blue;">Borrow</span></td>
                         <td>05</td>
                         <td><img src="image/s1.jpg" style="width:100px;height:100px;"></a></td>
                         <td>Drill</td>
                         <td>3</td>
+                        <td><input type="number"></td>
                       </tr>
                       <tr>
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
