@@ -16,11 +16,21 @@
         <div class="container col-sm-12 animated fadeIn" >
             <div class= "row">
                 <jsp:include page="WEB-INF/sidebar.jsp"/>
-                <div class="col-sm-7 wall back radius10 black">                                        
-                    <span style="font-size: 20px; font-weight: bold">Student ID :</span><span style="font-size: 20px;" > 56130500000 </span><br>
-                    <span style="font-size: 20px; font-weight: bold">Name:</span><span style="font-size: 20px;" > Mr.Team7 </span><br>
-                    <span style="font-size: 20px; font-weight: bold">Surname : </span><span style="font-size: 20px;" > Teamteam </span><br>
-                    
+                <div style="padding:20px; margin-bottom: 30px"class="col-sm-7 wall radius10 back black">
+                    <table >
+                        <tr>
+                            <td><span style="font-size: 20px; font-weight: bold">Student ID :&nbsp;&nbsp;&nbsp;</span></td>
+                            <td><span style="font-size: 20px;" > ???? </span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 20px; font-weight: bold">Name :  </span></td>
+                            <td><span style="font-size: 20px;" > ???? </span></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 20px; font-weight: bold">Surname :  </span></td>
+                            <td><span style="font-size: 20px;" > ???? </span></td>
+                        </tr>
+                    </table>         
                 </div>
                 <div class="row" style="margin-top: 20px ; margin-bottom: 20px">
                    <div class="col-sm-7">
@@ -67,14 +77,9 @@
                         <td>Drill</td>
                         <td>3</td>
                       </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><input type="submit" class="btn btn-danger"></td>
-                      </tr>
                     </table>
+                    <a href="borrow-step-1.jsp" ><button type="button" class="btn btn-info pull-left" style="margin:30px 0px 0px 50px">Back</button></a> 
+                    <button type="button" class="btn btn-danger pull-right" style="margin:30px 50px 0px 0px">Submit</button>
                 </div>
 
                         

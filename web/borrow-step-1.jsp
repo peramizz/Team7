@@ -13,12 +13,12 @@
     </head>
     <body>
         <jsp:include page="WEB-INF/header.jsp"/>
-        <div style="height:575px;" class="container  col-sm-12 animated fadeIn">
+        <div style="min-height:575px;" class="container  col-sm-12 animated fadeIn">
             <div class="row">
                 <jsp:include page="WEB-INF/sidebar.jsp"/>
                 <div class="col-sm-3 well">                                        
                     <center><p>Student Id : <input type="text" required> </p></center>
-                    <button type="submit" class="pull-right">Next</button>                   
+                    <a href="borrow-step-2.jsp" style="text-decoration: none; color:whitesmoke"><button type="button" class="pull-right btn btn-info">Next</button>                   
                 </div>
             </div>
         </div>

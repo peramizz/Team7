@@ -14,7 +14,7 @@
     </head>
     <body>
         <jsp:include page="WEB-INF/header.jsp"/>
-        <div  class="container col-sm-12 animated fadeIn">
+        <div  style="min-height:575px;" class="container col-sm-12 animated fadeIn">
             <div class="row">
                 <jsp:include page="WEB-INF/sidebar.jsp"/>
                 <div style="padding: 20px" class="col-sm-8 back radius10">
