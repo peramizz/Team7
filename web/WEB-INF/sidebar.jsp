@@ -17,7 +17,7 @@
             </table>
         </form>
         <hr>
-        <button type="button" class="btn btn-info"><a href="new-tool.jsp" style="animation-direction: none;color:whitesmoke">New Tools</a></button>
+        <a href="new-tool.jsp" style="color:whitesmoke"><button type="button" class="btn btn-info btn-block">New Tools</button></a>
         <a href="getcatalog?tag=Electric+Appliance"><button type="button" class="btn btn-default btn-block">Electric Appliance</button></a>
         <a href="getcatalog?tag=Speaker"><button type="button" class="btn btn-default btn-block">Speaker</button></a>
         <a href="getcatalog?tag=Indoor+Decoration"><button type="button" class="btn btn-default btn-block">Indoor Decoration</button></a>
