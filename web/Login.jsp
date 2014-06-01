@@ -18,7 +18,7 @@
 	</div>
 		<div class="col-sm-6 ">
 		</div>
-		<div class="col-sm-4 animated fadeInDownBig log radius10 shadowbox" id="div1">
+		<div class="col-sm-4 animated fadeInDown log radius10 shadowbox" id="div1">
 		<form class="form-horizontal" role="form">
 	  <div style="margin-left: 35px" class="form-group">
 	    <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
