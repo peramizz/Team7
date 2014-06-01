@@ -55,7 +55,7 @@
                     <td>05</td>
                     <td><img src="image/s1.jpg" style="width:100px;height:100px;"></a></td>
                     <td>สว่าน</td>
-                    <td>2</td>
+                    <td>1</td>
                   </tr>
                 </table>
             </div>
