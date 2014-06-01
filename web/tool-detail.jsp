@@ -23,7 +23,7 @@
         <div class="container col-sm-12 animated fadeIn">
             <div class="row">
                 <jsp:include page="WEB-INF/sidebar.jsp"/>
-                <div class="col-sm-8 well" style="color: #269abc">
+                <div class="col-sm-8 back radius10">
                     <div class="row">
                         <form action="changetool"  method="post" enctype="multipart/form-data">
                         <div class="col-sm-4"><img src="<%=t.getPicture()%>" width="80%" height="80%">

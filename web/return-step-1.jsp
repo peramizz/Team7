@@ -1,6 +1,6 @@
 <%-- 
-    Document   : borrow-step-1
-    Created on : Jun 1, 2014, 12:11:51 AM
+    Document   : return
+    Created on : Jun 1, 2014, 9:39:23 AM
     Author     : Nestsuz Lekjaroen
 --%>
 
@@ -8,17 +8,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SMSA | Borrow</title>
-        <jsp:include page="WEB-INF/title.jsp"/>
+        <jsp:include page="WEB-INF/title.jsp"/> 
+        <title>SMSA | Return</title>
     </head>
     <body>
         <jsp:include page="WEB-INF/header.jsp"/>
-        <div class="container  col-sm-12 animated fadeIn">
+        <div class="container col-sm-12 animated fadeIn">
             <div class="row">
                 <jsp:include page="WEB-INF/sidebar.jsp"/>
                 <div class="col-sm-3 well">                                        
                     <center><p>Student Id : <input type="text" required> </p></center>
-                    <button type="submit" class="pull-right">Next</button>                   
+                    <button type="submit" class="pull-right" >Next</button>
+                    
                 </div>
             </div>
         </div>

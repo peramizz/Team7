@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <div>
-  <img src="img/header.png">
+  <img src="img/header.png" width="100%">
 </div>
 <nav class="navbar navbar-inverse" role="navigation">
   <div class="container-fluid">
@@ -19,7 +19,7 @@
       <ul class="nav navbar-nav">
         <li><a href="index.jsp">Storage Management</a></li>
         <li><a href="borrow-step-1.jsp">Borrow</a></li>
-        <li><a href="index3.html">Return</a></li>
+        <li><a href="return-step-1.jsp">Return</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

@@ -10,13 +10,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<title>SMSoA | Storage Management</title>
+	<title>SMSA | Storage Management</title>
         <jsp:include page="WEB-INF/title.jsp"/>
-        <style type="text/css">  
-            tr{
-                margin: 10px;
-            }
-      </style>
     <body>
          <jsp:include page="WEB-INF/header.jsp"/>
     <div class="container col-sm-12 animated fadeIn">
@@ -32,14 +27,13 @@
                 }
                 
                 %>
-                <table style="text-align:center;background-color:rgba(0,0,0,0.4);color:white;"class="table">
+                <table style="text-align:center;background-color:rgba(255,255,255,0.9);color:black;"class="table">
                   <tr>
                     <th style="text-align:center;">Picture</th>
                     <th style="text-align:center;">Name</th>
                     <th style="text-align:center;">Amount</th>
                     <th style="text-align:center;">TAG</th>
-                  </tr>
-                  
+                  </tr>      
                 <%
                     String search=request.getParameter("search");
                     if(search==null){
@@ -64,8 +58,6 @@
                   %>
                 </table>
             </div>
-            
-    
     </div>
     </div>
          <jsp:include page="WEB-INF/footer.jsp"/>
