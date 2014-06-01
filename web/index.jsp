@@ -10,18 +10,13 @@
     <head>
 	<title>SMSA | Storage Management</title>
         <jsp:include page="WEB-INF/title.jsp"/>
-        <style type="text/css">  
-            tr{
-                margin: 10px;
-            }
-      </style>
     <body>
          <jsp:include page="WEB-INF/header.jsp"/>
     <div class="container col-sm-12 animated fadeIn">
         <div class="row">
             <jsp:include page="WEB-INF/sidebar.jsp"/>
             <div class="col-sm-7">
-                <table style="text-align:center;background-color:rgba(0,0,0,0.4);color:white;"class="table">
+                <table style="text-align:center;background-color:rgba(255,255,255,0.9);color:black;"class="table">
                   <tr>
                     <th style="text-align:center;">Id</th>
                     <th style="text-align:center;">Picture</th>
