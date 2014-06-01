@@ -6,6 +6,7 @@
 package driver;
 
 import Connecter.ConnectionBuilder;
+import java.util.List;
 import model.*;
 
 /**
@@ -15,25 +16,15 @@ import model.*;
 public class tester {
 
     public static void main(String[] args) {
-        Tool t1 = Tool.findById(1);
-        System.out.println(t1.toString());
+        List<Tool> tools=Tool.findByName("");
+        Tool t1 = tools.get(1);
+        System.out.println(t1.getName());
         for (Item i : t1.getItems()) {
             System.out.println(i.getDetail());
         }
+        System.out.println("///////");
         for (String t : t1.getTags()) {
             System.out.println(t);
         }
-
-//        t1.addTool("cotton", "c.jpg");
-//        t1.deleteTool("cotton");
-        
-        t1.getTags().add("Speaker");
-        t1.getTags().remove("Indoor Decoration");
-        for (String t : t1.getTags()) {
-            System.out.println(t);
-        }
-        
-        t1.saveTag();
-        
     }
 }

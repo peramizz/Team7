@@ -1,9 +1,9 @@
-insert into tag value('Electric Appliance');
-insert into tag value('Speaker');
-insert into tag value('Indoor Decoration');
-insert into tag value('Outdoor Decoration');
-insert into tag value('Prop');
-insert into tag value('Fabric');
-insert into tag value('Wood');
+insert into tag values('Electric Appliance');
+insert into tag values('Speaker');
+insert into tag values('Indoor Decoration');
+insert into tag values('Outdoor Decoration');
+insert into tag values('Prop');
+insert into tag values('Fabric');
+insert into tag values('Wood');
 
 /*insert into tool (name,picture) value('paint bucket:White','/webpage/image/s4.jpg');*/

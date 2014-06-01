@@ -87,23 +87,33 @@ public class Tool {
              }
     }
     
-    public void deleteTool(String name){
-        if(isExist(name)){
+    public void deleteTool(){
             try{
                 Connection conn = ConnectionBuilder.getConnection();
-                String sql = "DELETE FROM TOOL WHERE NAME = ?  ";
+                String sql = "DELETE FROM item WHERE idtools = ?  ";
                 PreparedStatement pstm = conn.prepareStatement(sql);
-                pstm.setString(1, name);
+                pstm.setInt(1, id);
                 pstm.executeUpdate();
-                
+                sql = "DELETE FROM tooltag WHERE idtool = ?  ";
+                pstm = conn.prepareStatement(sql);
+                pstm.setInt(1, id);
+                pstm.executeUpdate();
+                sql = "DELETE FROM borrow WHERE idtool = ?  ";
+                pstm = conn.prepareStatement(sql);
+                pstm.setInt(1, id);
+                pstm.executeUpdate();
+                sql = "DELETE FROM TOOL WHERE idtools = ?  ";
+                pstm = conn.prepareStatement(sql);
+                pstm.setInt(1,id);
+                pstm.executeUpdate();
             } catch (SQLException ex) {
                 Logger.getLogger(Tool.class.getName()).log(Level.SEVERE, null, ex);
             }
-        }
+        
     }
     
     public static List<Tool> findByName(String name){
-        List tools = null;
+        List tools = new ArrayList();
         try{
             Connection conn = ConnectionBuilder.getConnection();
             String sql = "SELECT * FROM TOOL WHERE NAME like ?  ";
@@ -117,6 +127,9 @@ public class Tool {
                 t = new Tool();
                 orm(rs , t);
                 tools.add(t);
+                t.fillItem();
+                t.fillTag();
+                
             }
         } catch (SQLException ex) {
             Logger.getLogger(Tool.class.getName()).log(Level.SEVERE, null, ex);
@@ -210,7 +223,7 @@ public class Tool {
         try {
             t.setId(rs.getInt("IDTOOLS"));
             t.setName(rs.getString("NAME"));
-            t.setPicture("PICTURE");
+            t.setPicture(rs.getString("PICTURE"));
         } catch (SQLException ex) {
             Logger.getLogger(Tool.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -410,5 +423,30 @@ public class Tool {
             Logger.getLogger(Tool.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
+    public String toTagHTML(){
+        String result="";
+        if(tags==null || tags.isEmpty()) return "";
+        
+        
+        for(String s:tags){
+            result+=s+"/";
+        }
+  
+        return result.substring(0,result.length()-1);
+    }
+    public void updateTool(){
+        try{
+            Connection conn = ConnectionBuilder.getConnection();
+            String sql = "UPDATE tool set picture = ? WHERE IDTOOLS = ?";
+            PreparedStatement pstm = conn.prepareStatement(sql);
+            pstm.setString(1,picture);
+            pstm.setInt(2, id);
+            pstm.executeUpdate();
+            
+            saveTag();
+            
+        }catch (SQLException ex) {
+            Logger.getLogger(Tool.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 }
