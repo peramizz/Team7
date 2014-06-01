@@ -453,7 +453,7 @@ public class Tool {
         List tools = new ArrayList();
         try{
             Connection conn = ConnectionBuilder.getConnection();
-            String sql = "SELECT * FROM TOOLTAG WHERE NAME = ?  ";
+            String sql = "select * from TOOL t join tooltag tt on t.IDTOOLS=tt.IDTOOL where tt.TAGNAME=?";
             PreparedStatement pstm = conn.prepareStatement(sql);
             pstm.setString(1,tagname);
             ResultSet rs = pstm.executeQuery();

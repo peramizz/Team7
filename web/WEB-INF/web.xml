@@ -20,6 +20,18 @@
         <servlet-name>getcatalog</servlet-name>
         <servlet-class>servlet.getcatalog</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>changeitem</servlet-name>
+        <servlet-class>servlet.changeitem</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>deleteitem</servlet-name>
+        <servlet-class>servlet.deleteitem</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>additem</servlet-name>
+        <servlet-class>servlet.additem</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>keywordsearch</servlet-name>
         <url-pattern>/keywordsearch</url-pattern>
@@ -39,6 +51,18 @@
     <servlet-mapping>
         <servlet-name>getcatalog</servlet-name>
         <url-pattern>/getcatalog</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>changeitem</servlet-name>
+        <url-pattern>/changeitem</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deleteitem</servlet-name>
+        <url-pattern>/deleteitem</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>additem</servlet-name>
+        <url-pattern>/additem</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

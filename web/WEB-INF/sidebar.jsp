@@ -18,12 +18,12 @@
         </form>
         <hr>
         <button type="button" class="btn btn-info"><a href="new-tool.jsp" style="animation-direction: none;color:whitesmoke">New Tools</a></button>
-        <button type="button" class="btn btn-default">Electric Appliance</button>
-        <button type="button" class="btn btn-default">Speaker</button>
-        <button type="button" class="btn btn-default">Indoor Decoration</button>
-        <button type="button" class="btn btn-default">Outdoor Decoration</button>
-        <button type="button" class="btn btn-default">Prop</button>
-        <button type="button" class="btn btn-default">Fabric</button>
-        <button type="button" class="btn btn-default">Wood</button>
+        <a href="getcatalog?tag=Electric+Appliance"><button type="button" class="btn btn-default btn-block">Electric Appliance</button></a>
+        <a href="getcatalog?tag=Speaker"><button type="button" class="btn btn-default btn-block">Speaker</button></a>
+        <a href="getcatalog?tag=Indoor+Decoration"><button type="button" class="btn btn-default btn-block">Indoor Decoration</button></a>
+        <a href="getcatalog?tag=Outdoor+Decoration"><button type="button" class="btn btn-default btn-block">Outdoor Decoration</button></a>
+        <a href="getcatalog?tag=Prop"><button type="button" class="btn btn-default btn-block">Prop</button></a>
+        <a href="getcatalog?tag=Fabric"><button type="button" class="btn btn-default btn-block">Fabric</button></a>
+        <a href="getcatalog?tag=Wood"><button type="button" class="btn btn-default btn-block">Wood</button></a>
     </div>
 </div>

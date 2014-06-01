@@ -3,6 +3,7 @@
     Created on : Jun 1, 2014, 12:32:41 AM
     Author     : Nestsuz Lekjaroen
 --%>
+<%@page import="model.Item"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
 <%@page import="model.Tool"%>
@@ -12,6 +13,8 @@
     <head>
         <%
             Tool t = (Tool)request.getAttribute("tool");
+            String search=request.getParameter("search");
+            if(search==null)search="";
             
         %>
         <title>SMSoA | <%=t.getName()%></title>
@@ -28,12 +31,13 @@
                            <div class="col-sm-4"><img src="<%=t.getPicture()%>" width="80%" height="80%">
                                 <input type="file" class="form-control" style="margin: 10px 0px 10px 0px;" name="upload">
                                 <input type="hidden" name="id" value="<%=t.getId()%>">
+                                <input type="hidden" name="search" value="<%=search%>">
                             </div>
                             <div class="col-sm-3">
                                 <div><h4>Tools name : </h4></div>
                                 <h1><%=t.getName()%></h1>
                             </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                              <div class="checkbox">
                                  <div><h4>-- Tool's Tag --</h4></div>
                                 <label>
@@ -75,7 +79,7 @@
                             <button type="submit" class="btn-link">
                                 <span class="glyphicon glyphicon-save" style="font-size: 20px;margin: 20px 0px 0px 0px""></span>
                             </button>
-                            <a href="deletetool?id=<%=t.getId()%>&search=<%=request.getParameter("search")%>">
+                            <a href="deletetool?id=<%=t.getId()%>&search=<%=search%>">
                                 <span class="glyphicon glyphicon-trash" style="font-size: 20px;margin: 20px 0px 0px 20px"></span>
                             </a>
                         </div>
@@ -83,6 +87,9 @@
                     </div>    
                     <div class="row">
                         <hr>
+                        <a href='additem?idtool=<%=t.getId()%>&search=<%=search%>'>
+                                <span class='glyphicon glyphicon-plus' style="color: green;" ></span>
+                            </a> Add New ITEM
                         <table class="table">
                             <tr>
                                 <th>Id</th>   
@@ -90,20 +97,32 @@
                                 <th>Status</th>
                                 <th></th>
                             </tr>
-                            <tr>
-                                <td>1</td>   
-                                <td><textarea cols="50"></textarea></td>
-                                <td><span class="glyphicon glyphicon-ok" style="font-size: 20px;color:greenyellow;"></span></td>
-                                <td><span class="glyphicon glyphicon-save" style="font-size: 20px"></span>
-                            <span class="glyphicon glyphicon-trash" style="font-size: 20px;margin-left: 10px"></span></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>   
-                                <td><textarea cols="50"></textarea></td>
-                                <td><span class="glyphicon glyphicon-user" style="font-size: 20px;color:gray"></span></td>
-                                <td><span class="glyphicon glyphicon-save" style="font-size: 20px"></span>
-                            <span class="glyphicon glyphicon-trash"style="font-size: 20px;margin-left: 10px"></span></td>
-                            </tr>
+                        
+                            <%
+                            List<Item> items = t.getItems();
+                            for(Item it:items){
+                                out.print("<form action='changeitem'  method='post' enctype='multipart/form-data'>");
+                                out.print("<tr>");
+                                    out.print("<td>"+it.getId());
+                                    out.print("</td>");
+                                    out.print("<td><textarea style='width:100%' name='detail'>"+it.getDetail()+"</textarea>");
+                                    out.print("</td>");
+                                    if(it.isAvaliable()){
+                                    out.print("<td><span class='glyphicon glyphicon-ok' style='font-size: 20px;color:greenyellow;'></span>");
+                                    out.print("</td>");
+                                    }else{
+                                       out.print("<td><span class='glyphicon glyphicon-user' style='font-size: 20px;color:gray'></span></td>");
+                                    }
+                                    out.print("<td>");
+                                        out.print("<button type='submit' class='btn-link'><span class='glyphicon glyphicon-save'></span></button><a href='deleteitem?idtool="+t.getId()+"&iditem="+it.getId()+"&search="+search+"'><span class='glyphicon glyphicon-trash' ></span></a>");
+                                    out.print("</td>");
+                                out.print("</tr>");
+                                out.print("<input type='hidden' name='idtool' value='"+t.getId()+"'>");
+                                out.print("<input type='hidden' name='iditem' value='"+it.getId()+"'>");
+                                out.print("<input type='hidden' name='search' value='"+search+"'>");
+                                out.print("</form>");
+                            }
+                            %>         
                         </table>
                     </div>
                 </div>
