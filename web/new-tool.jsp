@@ -19,8 +19,9 @@
                 <jsp:include page="WEB-INF/sidebar.jsp"/>
                 <div style="padding: 20px" class="col-sm-8 back radius10">
                     <div class="row">
-                        <div class="col-sm-4"><img src="img/Gray.jpg" width="80%" height="80%">
-                            <input type="file" class="form-control" style="margin: 10px 0px 10px 0px;"><button type="submit">Upload</button>
+                        <div class="col-sm-4">
+                            <div style="width: 300px;height:300px;"></div>
+                            <input type="file" class="form-control" style="margin: 10px 0px 10px 0px;">
                         </div>
                         <div class="col-sm-3">
                             <div><h4>Tools name : </h4></div>
