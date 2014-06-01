@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <div>
-  <img src="img/header.png">
+  <img src="img/header.png" width="100%">
 </div>
 <nav class="navbar navbar-inverse" role="navigation">
   <div class="container-fluid">

@@ -9,7 +9,7 @@
 <html>
     <head>
        
-        <title></title>
+        <title>SMSA | Tools Management</title>
         <jsp:include page="WEB-INF/title.jsp"/>
     </head>
     <body>
