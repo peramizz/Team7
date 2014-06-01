@@ -17,7 +17,7 @@
             if(search==null)search="";
             
         %>
-        <title>SMSoA | <%=t.getName()%></title>
+        <title>SMSA | <%=t.getName()%></title>
         <jsp:include page="WEB-INF/title.jsp"/>
     </head>
     <body>

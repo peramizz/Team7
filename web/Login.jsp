@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login !</title>
+	<title>Storage Management System of Student Affairs</title>
 	<link rel="stylesheet" href="css/animate.css">
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
@@ -20,13 +20,13 @@
 		</div>
 		<div class="col-sm-4 animated fadeInDownBig log radius10 shadowbox" id="div1">
 		<form class="form-horizontal" role="form">
-	  <div class="form-group">
+	  <div style="margin-left: 35px" class="form-group">
 	    <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
 	    <div class="col-sm-10">
 	      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
 	    </div>
 	  </div>
-	  <div class="form-group">
+	  <div style="margin-left: 35px" class="form-group">
 	    <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
 	    <div class="col-sm-10">
 	      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
