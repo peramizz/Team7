@@ -14,7 +14,7 @@
             Tool t = (Tool)request.getAttribute("tool");
             
         %>
-        <title>SMSoA | <%=t.getName()%></title>
+        <title>SMSA | <%=t.getName()%></title>
         <jsp:include page="WEB-INF/title.jsp"/>
     </head>
     <body>
