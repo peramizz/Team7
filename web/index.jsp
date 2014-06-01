@@ -3,7 +3,6 @@
     Created on : Jun 1, 2014, 12:02:20 AM
     Author     : Nestsuz Lekjaroen
 --%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -56,7 +55,7 @@
                     <td>05</td>
                     <td><img src="image/s1.jpg" style="width:100px;height:100px;"></a></td>
                     <td>สว่าน</td>
-                    <td>3</td>
+                    <td>2</td>
                   </tr>
                 </table>
             </div>
