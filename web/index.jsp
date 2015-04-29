@@ -8,6 +8,10 @@
 <%@page import="model.Tool"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
+555
+
+uyukkyuky
 <html>
     <head>      
 	<title>SMSA | Storage Management</title>
